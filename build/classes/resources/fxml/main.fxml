@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="498.0" prefWidth="672.0" stylesheets="@../css/main.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="net.etfbl.bp.controllers.MainController">
+    <children>
+        <TabPane layoutX="162.0" layoutY="29.0" prefHeight="200.0" prefWidth="200.0" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <tabs>
+                <Tab text="Prodaja">
+                    <content>
+                        <fx:include fx:id="prodaja" source="prodaja.fxml" />
+                    </content>
+                </Tab>
+                <Tab text="Dostupnost">
+                    <content>
+                        <fx:include fx:id="dostupnost" source="dostupnost.fxml" />
+                    </content>
+                </Tab>
+                <Tab text="Stoniranje">
+                    <content>
+                        <fx:include fx:id="stoniranje" source="stoniranje.fxml" />
+                    </content>
+                </Tab>
+                <Tab text="Nabavka">
+                    <content>
+                        <fx:include fx:id="nabavka" source="nabavka.fxml" />
+                    </content>
+                </Tab>
+                <Tab text="Pregled">
+                    <content>
+                        <fx:include fx:id="pregled" source="pregled.fxml" />
+                    </content>
+                </Tab>
+                <Tab text="Promet">
+                    <content>
+                        <fx:include source="promet.fxml" />
+                    </content>
+                </Tab>
+                <Tab text="Zaposleni">
+                    <content>
+                        <fx:include source="zaposleni.fxml" />
+                    </content>
+                </Tab>
+            </tabs>
+        </TabPane>
+    </children>
+</AnchorPane>

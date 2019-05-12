@@ -1,0 +1,35 @@
+.rowNumberColumn, .kolicinaColumn {
+    -fx-alignment: center;
+}
+
+.cijenaColumn, .vrijednostColumn {
+    -fx-alignment: center-right;
+}
+
+.dialog-pane:header .header-panel .label {
+    -fx-font-size: 20px;
+    -fx-wrap-text: true;
+
+}
+
+.dialog-pane .label {
+    -fx-font-size: 15px;
+}
+
+.tab {
+    -fx-pref-width: 80px;
+    -fx-pref-height: 30px;
+    -fx-padding: 0px;
+}
+
+.tab .tab-label {
+    -fx-font-size: 13px;
+    -fx-pref-width: 80px;
+    -fx-alignment: center;
+}
+
+.text-field:readonly {
+    -fx-background-color: -fx-background;
+    -fx-border-color: -fx-outer-border;
+    -fx-border-radius: 0.333333em;
+}

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="net.etfbl.bp.controllers.ZaposleniController">
+    <children>
+        <VBox spacing="10.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="10.0">
+            <children>
+                <HBox maxHeight="-Infinity" minHeight="-Infinity" prefHeight="30.0" spacing="10.0">
+                    <children>
+                        <ComboBox fx:id="imeComboBox" editable="true" maxHeight="-Infinity" minHeight="-Infinity" prefHeight="30.0" prefWidth="150.0" promptText="Ime" style="-fx-font-size: 13px;" />
+                        <ComboBox fx:id="prezimeComboBox" editable="true" maxHeight="-Infinity" minHeight="-Infinity" prefHeight="30.0" prefWidth="150.0" promptText="Prezime" style="-fx-font-size: 13px;" />
+                        <Button fx:id="prikaziButton" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="30.0" prefWidth="90.0" text="Prikaži">
+                            <font>
+                                <Font size="13.0" />
+                            </font>
+                        </Button>
+                        <HBox alignment="CENTER_RIGHT" HBox.hgrow="ALWAYS">
+                            <children>
+                                <Button fx:id="noviZaposleniButton" maxHeight="-Infinity" minHeight="-Infinity" mnemonicParsing="false" prefHeight="30.0" prefWidth="120.0" text="Novi zaposleni">
+                                    <font>
+                                        <Font size="13.0" />
+                                    </font>
+                                </Button>
+                            </children>
+                        </HBox>
+                    </children>
+                </HBox>
+                <TableView fx:id="table" VBox.vgrow="ALWAYS">
+                    <columns>
+                        <TableColumn editable="false" maxWidth="30.0" minWidth="30.0" prefWidth="30.0" sortable="false" styleClass="rowNumberColumn" text="#" />
+                        <TableColumn editable="false" minWidth="80.0" sortable="false" text="Ime" />
+                        <TableColumn editable="false" minWidth="80.0" sortable="false" text="Prezime" />
+                        <TableColumn editable="false" minWidth="150.0" prefWidth="150.0" sortable="false" text="Adresa" />
+                        <TableColumn editable="false" minWidth="130.0" prefWidth="130.0" sortable="false" styleClass="rowNumberColumn" text="Telefon" />
+                        <TableColumn editable="false" minWidth="60.0" prefWidth="60.0" sortable="false" styleClass="rowNumberColumn" text="Plata" />
+                        <TableColumn minWidth="100.0" prefWidth="100.0" text="Radni odnos" />
+                        <TableColumn editable="false" minWidth="170.0" prefWidth="170.0" sortable="false" text="Poslovnica" />
+                    </columns>
+                    <columnResizePolicy>
+                        <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                    </columnResizePolicy>
+                </TableView>
+                <HBox maxHeight="-Infinity" minHeight="-Infinity" prefHeight="30.0" spacing="10.0">
+                    <children>
+                        <Button fx:id="ponistiButton" maxHeight="-Infinity" minHeight="-Infinity" mnemonicParsing="false" prefHeight="30.0" prefWidth="100.0" text="Poništi">
+                            <font>
+                                <Font size="13.0" />
+                            </font>
+                        </Button>
+                        <HBox alignment="CENTER_RIGHT" maxHeight="-Infinity" minHeight="-Infinity" prefHeight="30.0" spacing="10.0" HBox.hgrow="ALWAYS">
+                            <children>
+                                <Button fx:id="obrisiButton" maxHeight="-Infinity" minHeight="-Infinity" mnemonicParsing="false" prefHeight="30.0" prefWidth="100.0" text="Obriši">
+                                    <font>
+                                        <Font size="13.0" />
+                                    </font>
+                                </Button>
+                        <Button fx:id="dodajRacunButton" maxHeight="-Infinity" minHeight="-Infinity" mnemonicParsing="false" prefHeight="30.0" prefWidth="100.0" text="Dodaj račun">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </Button>
+                                <Button fx:id="prikaziUgovorButton" maxHeight="-Infinity" minHeight="-Infinity" mnemonicParsing="false" prefHeight="30.0" prefWidth="100.0" text="Prikaži ugovor">
+                                    <font>
+                                        <Font size="13.0" />
+                                    </font>
+                                </Button>
+                            </children>
+                        </HBox>
+                    </children>
+                </HBox>
+            </children>
+        </VBox>
+    </children>
+</AnchorPane>

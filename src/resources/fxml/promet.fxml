@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="net.etfbl.bp.controllers.PrometController">
+   <children>
+      <VBox spacing="10.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="10.0">
+         <children>
+            <HBox maxHeight="-Infinity" minHeight="-Infinity" prefHeight="30.0" spacing="10.0">
+               <children>
+                  <ComboBox fx:id="poslovnicaComboBox" maxHeight="-Infinity" minHeight="-Infinity" prefHeight="30.0" prefWidth="200.0" promptText="Poslovnica" style="-fx-font-size: 13px;" />
+                  <ComboBox fx:id="prometComboBox" maxHeight="-Infinity" minHeight="-Infinity" prefHeight="30.0" prefWidth="150.0" promptText="Promet" style="-fx-font-size: 13px;" />
+                  <Button fx:id="prikaziButton" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="30.0" prefWidth="90.0" text="Prikaži">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Button>
+               </children>
+            </HBox>
+            <TableView fx:id="table" VBox.vgrow="ALWAYS">
+              <columns>
+                <TableColumn fx:id="dateColumn" editable="false" prefWidth="75.0" sortable="false" text="Datum" />
+                <TableColumn editable="false" prefWidth="75.0" sortable="false" text="Iznos" />
+              </columns>
+               <columnResizePolicy>
+                  <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+               </columnResizePolicy>
+            </TableView>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

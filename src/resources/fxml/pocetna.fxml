@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="176.0" prefWidth="357.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="net.etfbl.bp.controllers.PocetnaController">
+   <children>
+      <Button fx:id="prijavaButton" layoutX="29.0" layoutY="116.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="295.0" text="Prijava">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Button>
+      <Label layoutX="29.0" layoutY="29.0" prefHeight="17.0" prefWidth="295.0" text="Izaberite poslovnicu">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="poslovnicaComboBox" layoutX="27.0" layoutY="63.0" prefHeight="29.0" prefWidth="295.0" />
+   </children>
+</AnchorPane>
